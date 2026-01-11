@@ -207,19 +207,19 @@ Look for:
 
 ## Comparison: Memory-Inefficient vs Efficient Approach
 
-### ❌ Memory-Inefficient (DON'T DO THIS)
+### Memory-Inefficient (DON'T DO THIS)
 
 ```python
 # BAD: Loads entire file into memory
 with open('huge.log', 'r') as f:
-    lines = f.readlines()  # ⚠️ 50GB in RAM!
+    lines = f.readlines()  # 50GB in RAM!
     
-df = pd.read_csv('huge.log')  # ⚠️ Even worse!
+df = pd.read_csv('huge.log')  # Even worse!
 ```
 
 **Result:** 50GB file requires 50GB+ RAM (likely crashes)
 
-### ✅ Memory-Efficient (THIS SCRIPT)
+### Memory-Efficient (THIS SCRIPT)
 
 ```python
 # GOOD: Streams file line by line
