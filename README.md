@@ -1,6 +1,6 @@
 # Log Parser - Memory Efficient 500 Error Analyzer
 
-A Python script that efficiently parses large log files (even 50GB+) without loading them into memory, identifies the top 5 IP addresses returning 500 errors, and sends alerts if error rates exceed a threshold.
+A Python script that efficiently parses large log files (50GB+) without loading them into memory, identifies the top 5 IP addresses returning 500 errors, and sends alerts if error rates exceed a threshold.
 
 ## Features
 
